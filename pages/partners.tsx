@@ -1,32 +1,31 @@
 import Page from '@/components/page'
 import Section from '@/components/section'
 
-const Index = () => (
+const Partners = () => (
 	<Page>
 		<Section>
 			<h2 className='text-xl font-semibold text-zinc-800 dark:text-zinc-200'>
-				Bienvenue au Le Trident Festival
+				Nos Partenaires
 			</h2>
 
 			<div className='mt-2'>
 				<p className='text-zinc-600 dark:text-zinc-400'>
-					Plongez dans l&apos;univers extraordinaire du{' '}
+					Le{' '}
 					<span className='font-medium text-zinc-900 dark:text-zinc-50'>
 						Le Trident Festival
-					</span>
-					, un événement musical unique qui réunit les meilleurs artistes dans
-					une ambiance festive et conviviale.
+					</span>{' '}
+					est rendu possible grâce au soutien de nos précieux partenaires.
 				</p>
 
 				<br />
 
 				<p className='text-zinc-600 dark:text-zinc-400'>
-					Explorez notre programmation, découvrez le plan du site et rencontrez
-					nos partenaires qui font de ce festival une expérience inoubliable.
+					Découvrez les entreprises et institutions qui nous accompagnent dans
+					cette aventure musicale et culturelle exceptionnelle.
 				</p>
 			</div>
 		</Section>
 	</Page>
 )
 
-export default Index
+export default Partners

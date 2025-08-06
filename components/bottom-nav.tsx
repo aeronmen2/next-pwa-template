@@ -6,7 +6,7 @@ const BottomNav = () => {
 
 	return (
 		<div className='sm:hidden'>
-			<nav className='fixed bottom-0 w-full border-t bg-zinc-100 pb-safe dark:border-zinc-800 dark:bg-zinc-900'>
+			<nav className='fixed bottom-0 w-full border-t bg-black-90 pb-safe dark:border-zinc-800 dark:bg-black-90'>
 				<div className='mx-auto flex h-16 max-w-md items-center justify-around px-6'>
 					{links.map(({ href, label, icon }) => (
 						<Link
@@ -34,7 +34,7 @@ export default BottomNav
 
 const links = [
 	{
-		label: 'Home',
+		label: 'Accueil',
 		href: '/',
 		icon: (
 			<svg
@@ -52,8 +52,8 @@ const links = [
 		),
 	},
 	{
-		label: 'Story',
-		href: '/story',
+		label: 'Artistes',
+		href: '/artists',
 		icon: (
 			<svg
 				viewBox='0 0 15 15'
@@ -63,15 +63,15 @@ const links = [
 				height='18'
 			>
 				<path
-					d='M2.5.5V0H2v.5h.5zm10 0h.5V0h-.5v.5zM4.947 4.724a.5.5 0 00-.894-.448l.894.448zM2.5 8.494l-.447-.223-.146.293.21.251.383-.32zm5 5.997l-.384.32a.5.5 0 00.769 0l-.385-.32zm5-5.996l.384.32.21-.251-.146-.293-.447.224zm-1.553-4.219a.5.5 0 00-.894.448l.894-.448zM8 9.494v-.5H7v.5h1zm-.5-4.497A4.498 4.498 0 013 .5H2a5.498 5.498 0 005.5 5.497v-1zM2.5 1h10V0h-10v1zM12 .5a4.498 4.498 0 01-4.5 4.497v1c3.038 0 5.5-2.46 5.5-5.497h-1zM4.053 4.276l-2 3.995.895.448 2-3.995-.895-.448zM2.116 8.815l5 5.996.769-.64-5-5.996-.769.64zm5.768 5.996l5-5.996-.768-.64-5 5.996.769.64zm5.064-6.54l-2-3.995-.895.448 2 3.995.895-.448zM8 14.49V9.494H7v4.997h1z'
+					d='M3 2.5a2.5 2.5 0 015 0v.879c0 .455.145.898.413 1.269l1.18 1.638a.5.5 0 01-.406.789H5.815a.5.5 0 01-.407-.79L6.587 4.65A1.99 1.99 0 007 3.38V2.5a1.5 1.5 0 00-3 0 .5.5 0 01-1 0zM5.5 8.915l-.005-.008a.5.5 0 01-.495-.492V7.5a.5.5 0 011 0v.915zM9 7.5a.5.5 0 011 0v.915a.5.5 0 01-.495.492L9.5 8.915V7.5zM4.5 11a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM3 12.5a.5.5 0 11-1 0 .5.5 0 011 0zM13 11a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM12 12.5a.5.5 0 11-1 0 .5.5 0 011 0z'
 					fill='currentColor'
 				/>
 			</svg>
 		),
 	},
 	{
-		label: 'Recipes',
-		href: '/recipes',
+		label: 'Carte',
+		href: '/map',
 		icon: (
 			<svg
 				viewBox='0 0 15 15'
@@ -81,8 +81,34 @@ const links = [
 				height='18'
 			>
 				<path
-					d='M7.5 15V7m0 .5v3m0-3a4 4 0 00-4-4h-3v3a4 4 0 004 4h3m0-3h3a4 4 0 004-4v-3h-3a4 4 0 00-4 4v3zm0 0l4-4m-4 7l-4-4'
-					stroke='currentColor'
+					d='M.877.5a.5.5 0 01.123-.377L1.377.5H.877zm4.246 0L4.5.123a.5.5 0 01.623 0l.623.377-.623-.377-.623.377zM9.5.123a.5.5 0 01.623 0L10.5.5l-.377-.377L9.5.123zM.5 1.5v12a.5.5 0 00.5.5h13a.5.5 0 00.5-.5v-12a.5.5 0 00-.5-.5H1a.5.5 0 00-.5.5zM1.5 13V2h12v11h-12z'
+					fill='currentColor'
+				/>
+				<path
+					d='M7.5 3a3 3 0 100 6 3 3 0 000-6zM6 6a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z'
+					fill='currentColor'
+				/>
+			</svg>
+		),
+	},
+	{
+		label: 'Partenaires',
+		href: '/partners',
+		icon: (
+			<svg
+				viewBox='0 0 15 15'
+				fill='none'
+				xmlns='http://www.w3.org/2000/svg'
+				width='18'
+				height='18'
+			>
+				<path
+					d='M4.5 1a.5.5 0 000 1h6a.5.5 0 000-1h-6zM2 4.5a.5.5 0 01.5-.5h10a.5.5 0 01.5.5v8a.5.5 0 01-.5.5h-10a.5.5 0 01-.5-.5v-8zM3 5v7h9V5H3z'
+					fill='currentColor'
+				/>
+				<path
+					d='M5 7.5a.5.5 0 01.5-.5h4a.5.5 0 010 1h-4a.5.5 0 01-.5-.5zM5 9.5a.5.5 0 01.5-.5h2a.5.5 0 010 1h-2a.5.5 0 01-.5-.5z'
+					fill='currentColor'
 				/>
 			</svg>
 		),

@@ -1,32 +1,33 @@
 import Page from '@/components/page'
 import Section from '@/components/section'
 
-const Index = () => (
+const Map = () => (
 	<Page>
 		<Section>
 			<h2 className='text-xl font-semibold text-zinc-800 dark:text-zinc-200'>
-				Bienvenue au Le Trident Festival
+				Plan du Festival
 			</h2>
 
 			<div className='mt-2'>
 				<p className='text-zinc-600 dark:text-zinc-400'>
-					Plongez dans l&apos;univers extraordinaire du{' '}
+					Retrouvez toutes les informations pratiques pour vous orienter sur le
+					site du{' '}
 					<span className='font-medium text-zinc-900 dark:text-zinc-50'>
 						Le Trident Festival
 					</span>
-					, un événement musical unique qui réunit les meilleurs artistes dans
-					une ambiance festive et conviviale.
+					.
 				</p>
 
 				<br />
 
 				<p className='text-zinc-600 dark:text-zinc-400'>
-					Explorez notre programmation, découvrez le plan du site et rencontrez
-					nos partenaires qui font de ce festival une expérience inoubliable.
+					Découvrez l&apos;emplacement des différentes scènes, des stands de
+					restauration, des points d&apos;accueil et de toutes les commodités
+					pour profiter pleinement de votre expérience.
 				</p>
 			</div>
 		</Section>
 	</Page>
 )
 
-export default Index
+export default Map
